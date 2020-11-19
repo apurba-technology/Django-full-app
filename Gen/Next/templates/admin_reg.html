@@ -1,0 +1,83 @@
+<!--DOCTYPE html>
+<html>
+<head>
+	<title>Regestion</title>
+</head>
+<body>
+	{% if error1 %}
+    <p style=" color: red;">
+    Please enter same password.</p>
+    {% endif %}
+	<form action="regestion" method="post">
+		{% csrf_token %}
+		Name--<input type="text" name="name"><br><br>
+		Father's name---<input type="text" name="fname"><br><br>
+		Address---<input type="text" name="address"><br><br>
+		E_mail---<input type="e_mail" name="e_mail"><br><br>
+		Phone Number--<input type="text" name="phone"><br><br>
+		Type password<input type="password" name="password"><br><br>
+		Retype password<input type="password" name="password1"><br><br>
+		<input type="submit" value ="submit">
+	</form>
+
+</body>
+</html-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admin Registration Page</title>
+	{% load staticfiles %}
+	<link rel='stylesheet' href="{% static "css/admin_style.css" %} ">
+	
+</head>
+<body>
+	{% if error1 %}
+    <p style=" color: red;">
+    Please enter same password.</p>
+	{% endif %}
+	<div class="main">
+
+    <div class="header">
+	<h2>Admin Register Form</h2>
+	</div>
+	<br>
+	<div >
+<FORM ACTION="regestion" method = "POST" >
+		{% csrf_token %}
+	
+	<div  class="input-group">
+	 <lable>Name:-</lable>
+		<INPUT type="text" name="name" placeholder="Enter your name" required>
+	</div>
+
+	
+	
+	<div class="input-group">
+			<label>E_mail:-</label>
+			<INPUT TYPE="E_maiL" name="e_mail" placeholder="example@gmail.com"  required>
+		</div>
+	<div class="input-group">
+		<label>Password:-</label>
+		<input type="password" name="password" placeholder="Enter password" required>
+	</div>	
+	<div class="input-group">	
+		<label>Confirm password:-</label>
+		<input type="password" name="password1" placeholder="Confirm password" required>
+	</div>
+	<div>
+		<input type="checkbox">
+		<label>
+			I Accept to the Terms & Conditions</label>
+	</div
+	<br><br>
+	<div id="apu"><table><tr><th><input type="submit" value="Register" id="ap1"></th>
+	<th><input type="reset"  VALUE="Reset" id="ap2"></th></tr></table></div><br>
+	<div><a href=""></a> <a href="log"> Alredy register.Log in?</a></div>
+	
+</div>
+
+</div>
+
+</form>
+</body>
+</html>

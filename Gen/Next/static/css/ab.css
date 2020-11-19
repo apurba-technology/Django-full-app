@@ -1,0 +1,135 @@
+.inner_page_heading h1 {
+    font-weight: 800;
+    color: #00315c;
+}.inner_para p {
+    font-weight: 500;
+    /* font-size: 16px; */
+    line-height: 30px;
+    margin-bottom: 10px;
+    text-align: justify;
+}p {
+    margin-bottom: 0;
+}
+p {
+    margin: 0 0 10px;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.para_heading {
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
+.para_heading h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    color: #51ade6;
+    display: flex;
+}
+.inner_para p {
+    font-weight: 500;
+    /* font-size: 16px; */
+    line-height: 30px;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+ul {
+    padding-left: 0;
+    margin-bottom: 0;
+}
+ol, ul {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+user agent stylesheet
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+.page_list ul > li {
+    display: flex;
+    padding: 5px 0;
+    line-height: 30px;
+}
+ul li {
+    list-style: none;
+}
+.page_list ul > li {
+    display: flex;
+    padding: 5px 0;
+    line-height: 30px;
+}
+ul li {
+    list-style: none;
+}
+
+.right_panel {
+    /* padding: 30px; */
+    background-color: #E2E2E2;
+    /* border: 5px solid #d4d4d4; */
+    height: 80%;
+    margin-top: 20px;
+}
+
+
+
+
+.panel-group {
+    margin-bottom: 20px;
+}
+.right_panel .panel-default .panel-heading {
+    background-color: #333;
+    height: 30px;
+    text-align: center;
+    color: #fff;
+    padding: 0;
+}
+.panel-default>.panel-heading {
+    color: #333;
+    background-color: #f5f5f5;
+    border-color: #ddd;
+}
+.panel-group .panel-heading {
+    border-bottom: 0;
+}
+.panel-heading {
+    padding: 10px 15px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+#ro {
+    margin-right: 15px;
+    margin-left: 50px;
+}
+    
+
+
+.panel-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 16px;
+    color: inherit;
+}
+
+
+
+#pa{
+    text-align: center;
+}
+.text10{
+    color: wheat;
+    text-align: center;
+}

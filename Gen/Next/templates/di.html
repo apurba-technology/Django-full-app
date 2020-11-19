@@ -1,0 +1,30 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <title>Banner Images</title> 
+  
+      <meta name="viewport" content="width=device-width, initial-scale=1"> 
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> 
+      </script> 
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"> 
+      </script> 
+</head> 
+<body style="background-color: azure;"> 
+  
+    {% for banner in banner_images %} 
+            <div class="col-md-4">
+                
+                  <h1>  {{ banner.name }} </h1>
+                     <img src="{{ banner.banner_image.url }}" class="img-responsive" style="width: 100%; float: left; margin-right: 10px;" />
+            
+                    <h4><a href="delete/{{banner.id}}" style="color: crimson; font-style: italic; padding-top: 10px; font-size: 22px;">Delete</h4></a>
+                   
+               
+                </div> 
+    {% endfor %} <br><br>
+    <center> <a href="admin"><button type="submit" style="font-size: 22px; background-color: blue; color: white; ">Back Admin Menu</button></a></center><br><br>
+    <center> <a href="banner_upload"><button type="submit" style="font-size: 22px; background-color: blue; color: white; ">Upload Again Banner Image</button></a></center>
+</body> 
+</html> 
